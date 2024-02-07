@@ -8,7 +8,7 @@ export default function Navbar() {
     const pathName = usePathname();
     return (
         <nav className="w-full shadow-sm">
-            <div className="container flex justify-between items-center">
+            <div className="container flex justify-center md:justify-between items-center">
                 <div>
                     <Image
                         src="/logo.png"
