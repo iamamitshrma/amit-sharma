@@ -24,7 +24,7 @@ export default function YTPlaylist() {
                 {
                     data?.data?.items && data?.data?.items.length > 0 &&
                     data?.data?.items.map((video) => {
-                        return <YTCard video={video} />
+                        return <YTCard key={video.id.videoId} video={video} />
                     })
                 }
             </div>
