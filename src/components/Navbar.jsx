@@ -1,14 +1,11 @@
 'use client'
-import { useState } from "react";
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion } from "framer-motion";
-import { HamburgerClose, HamburgerOpen } from "@/ui/Hamburger";
 
 export default function Navbar() {
     const pathName = usePathname();
-    const [hamdburgerShow, setHamburgerShow] = useState(true);
     return (
         <nav className="w-full shadow-md">
             <div className="container flex justify-between items-center">
