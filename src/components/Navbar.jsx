@@ -7,11 +7,11 @@ import { motion } from "framer-motion";
 export default function Navbar() {
     const pathName = usePathname();
     return (
-        <nav className="w-full shadow-md">
+        <nav className="w-full shadow-sm">
             <div className="container flex justify-between items-center">
                 <div>
                     <Image
-                        src="/logo.svg"
+                        src="/logo.png"
                         width={80}
                         height={80}
                         alt="Amit Sharma" />
