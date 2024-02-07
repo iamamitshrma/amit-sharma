@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="container flex items-center justify-center flex-col py-8 border-t-[1px]">
       <h1 className="font-bold text-5xl text-lightGray mb-2">Amit Sharma</h1>
-      <p className="text-center text-darkGray mb-5 md:w-3/4">Learn web application development, production software, and programming with Amit Sharma. To overcome obstacles, take use of individualised coaching and consultation services. Create expertly crafted, search engine-friendly software or web apps just for your goods. Together, let's work and create!</p>
+      <p className="text-center text-darkGray mb-5 md:w-3/4">Learn web application development, production software, and programming with Amit Sharma. To overcome obstacles, take use of individualised coaching and consultation services. Create expertly crafted, search engine-friendly software or web apps just for your goods. Together, let&apos;s work and create!</p>
       <div className="flex mb-10">
         <Link className="me-2" href="https://github.com/iamamitshrma" target="_blank">
           <Image src="/github.png" width={30} height={30} alt="amit sharma github" />
