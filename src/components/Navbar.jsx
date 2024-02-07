@@ -23,19 +23,19 @@ export default function Navbar() {
                     animate={{ y: 70, opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: 0.75 }}
                 >
-                    <li><Link className={`text-lg ${pathName === "/" && "font-bold text-active"}`} href="/">Home</Link></li>
-                    <li><Link className={`text-lg ${pathName === "/yt-videos" && "font-bold text-active"}`} href="/yt-videos">YT Videos</Link></li>
-                    <li><Link className={`text-lg ${pathName === "/blogs" && "font-bold text-active"}`} href="/blogs">Blogs</Link></li>
-                    <li><Link className={`text-lg ${pathName === "/contact" && "font-bold text-active"}`} href="/contact">Contact</Link></li>
-                    <li><Link className={`text-lg ${pathName === "/about" && "font-bold text-active"}`} href="/about">About</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/" && "text-active"}`} href="/">Home</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/yt-videos" && "text-active"}`} href="/yt-videos">YT Videos</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/blogs" && "text-active"}`} href="/blogs">Blogs</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/contact" && "text-active"}`} href="/contact">Contact</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/about" && "text-active"}`} href="/about">About</Link></li>
                 </motion.ul>
 
                 <ul className="hidden md:flex justify-between w-2/5">
-                    <li><Link className={`text-lg ${pathName === "/" && "font-bold text-active"}`} href="/">Home</Link></li>
-                    <li><Link className={`text-lg ${pathName === "/yt-videos" && "font-bold text-active"}`} href="/yt-videos">YT Videos</Link></li>
-                    <li><Link className={`text-lg ${pathName === "/blogs" && "font-bold text-active"}`} href="/blogs">Blogs</Link></li>
-                    <li><Link className={`text-lg ${pathName === "/contact" && "font-bold text-active"}`} href="/contact">Contact</Link></li>
-                    <li><Link className={`text-lg ${pathName === "/about" && "font-bold text-active"}`} href="/about">About</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/" && "text-active"}`} href="/">Home</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/yt-videos" && "text-active"}`} href="/yt-videos">YT Videos</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/blogs" && "text-active"}`} href="/blogs">Blogs</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/contact" && "text-active"}`} href="/contact">Contact</Link></li>
+                    <li><Link className={`text-lg ${pathName === "/about" && "text-active"}`} href="/about">About</Link></li>
                 </ul>
             </div>
         </nav>
