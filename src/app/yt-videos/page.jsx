@@ -1,6 +1,6 @@
 "use client"
-import YTPlaylist from "@/components/YT/YRPlaylist"
-import YTVideo from "@/components/YT/YTVideo"
+import YTPlaylist from "@/app/yt-videos/YRPlaylist"
+import YTVideo from "@/app/yt-videos/YTVideo"
 import {
     Tabs,
     TabsContent,
