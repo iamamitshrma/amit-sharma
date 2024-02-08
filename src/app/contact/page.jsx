@@ -10,7 +10,7 @@ export default function Contact() {
         <section className="container py-5 flex flex-col md:flex-row justify-between items-center">
             <div className="mb-10">
                 <h3 className="text-active font-bold mb-2">Contact</h3>
-                <h1 className="text-darkGray font-extrabold text-4xl mb-1">Say "HEY"</h1>
+                <h1 className="text-darkGray font-extrabold text-4xl mb-1">Say &quot;HEY&quot;</h1>
                 <p className="text-lightGray font-thin text-sm w-full md:w-1/2 mb-10">Have a question or need help? Contact for quick assistance and friendly support. I am here to help you.</p>
 
                 <div className="w-full md:w-[80%]">
