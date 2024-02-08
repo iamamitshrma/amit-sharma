@@ -13,7 +13,7 @@ export default function Testimonial() {
                 {
                     testimonials.map((testimonial) => {
                         return (
-                            <Link className="w-[100%] md:w-[32%] mb-5" href={testimonial.link} target="_blank">
+                            <Link key={testimonial.id} className="w-[100%] md:w-[32%] mb-5" href={testimonial.link} target="_blank">
                                 <Card className="w-[100%] md:w-[100%] p-5">
                                     <CardHeader className="mb-5">
                                         <h1 className="font-bold text-darkGray text-center">{testimonial.tag}</h1>

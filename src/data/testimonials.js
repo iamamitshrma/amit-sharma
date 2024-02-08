@@ -18,7 +18,7 @@ export const testimonials = [
         link: "https://www.linkedin.com/services/page/8a8b703254a7242a41/"
     },
     {
-        id: 1,
+        id: 3,
         name: "Gyasuddin Ansari",
         comment: "Very nice work and delivery on time.",
         stars: 5,
