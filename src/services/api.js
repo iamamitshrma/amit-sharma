@@ -27,4 +27,3 @@ export function getChannelsVideos(order = "date", maxResult = 20, type = "video"
 export function getChannelsPlaylist(order = "date", maxResult = 20, type = "playlist") {
     return API.get(`/playlists?key=${process.env.NEXT_PUBLIC_GOOGLE_YT_API_KEY}&channelId=${process.env.NEXT_PUBLIC_YT_CHANNEL_ID}&part=snippet,id&order=${order}&maxResults=${maxResult}&type=${type}`)
 }
-
