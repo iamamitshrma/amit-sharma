@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Navbar() {
     const pathName = usePathname();
     return (
-        <nav className="w-full shadow-sm">
+        <nav className="w-full">
             <div className="container flex justify-center md:justify-between items-center">
                 <div>
                     <Image
