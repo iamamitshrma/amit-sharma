@@ -18,7 +18,7 @@ export default function Projects() {
                 {
                     projects.map((project) => {
                         return (
-                                <Card className="w-[100%] md:w-[32%] mb-5 flex flex-col items-center p-5 bg-purple-50">
+                                <Card key={project.id} className="w-[100%] md:w-[32%] mb-5 flex flex-col items-center p-5 bg-purple-50">
                                     <CardHeader className="mb-5">
                                         <Link href={project.link} target="_blank"><h1 className="font-bold text-darkGray text-center relative w-fit flex self-center">{project.name}<MdArrowOutward color="#8b169f" className="absolute -right-4 -top-2"/></h1></Link>
                                     </CardHeader>
