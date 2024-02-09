@@ -13,7 +13,7 @@ export default function YTVideos() {
     return (
         <div className="container py-5">
             <Tabs defaultValue="videos" className="w-[100%]">
-                <TabsList className="grid w-full grid-cols-2 mb-10">
+                <TabsList className="grid w-full grid-cols-2 mb-5">
                     <TabsTrigger value="videos">Videos</TabsTrigger>
                     <TabsTrigger value="channels">Playlists</TabsTrigger>
                 </TabsList>

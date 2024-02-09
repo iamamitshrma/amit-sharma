@@ -1,5 +1,6 @@
 import { skills } from "@/data/skills";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function About() {
@@ -23,14 +24,14 @@ export default function About() {
                     <div className="w-full md:w-[80%]">
                     </div>
                 </div>
-                <div className="w-full md:w-1/2 flex flex-wrap justify-center">
+                <div className="w-full md:w-1/2 flex flex-wrap justify-between items-center">
                     {
                         skills.map((skill) => {
                             return (
-                                <div key={skill.id} className="md:me-10 flex flex-col items-center justify-center p-2 mb-5">
+                                <Link href={skill.link} target="_blank" key={skill.id} className="flex flex-col items-center justify-center p-2 mb-5 w-[30%] md:w-[30%] cursor-pointer">
                                     <Image className="mb-5" src={skill.logo} width={50} height={50} alt={skill.alt} />
                                     <span>{skill.name}</span>
-                                </div>
+                                </Link>
                             )
                         })
                     }
