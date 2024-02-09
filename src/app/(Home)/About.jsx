@@ -27,7 +27,7 @@ export default function About() {
                     {
                         skills.map((skill) => {
                             return (
-                                <div key={skill.id} className="me-10 flex flex-col items-center p-2 mb-5">
+                                <div key={skill.id} className="md:me-10 flex flex-col items-center justify-center p-2 mb-5">
                                     <Image className="mb-5" src={skill.logo} width={50} height={50} alt={skill.alt} />
                                     <span>{skill.name}</span>
                                 </div>

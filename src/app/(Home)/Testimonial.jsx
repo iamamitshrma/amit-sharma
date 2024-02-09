@@ -4,8 +4,8 @@ import Link from "next/link"
 
 export default function Testimonial() {
     return (
-        <section className="container py-5 flex flex-col justify-center min-h-[100vh] bg-slate-200">
-            <div className="flex flex-col items-center mb-10">
+        <section className="container py-5 flex flex-col min-h-[100vh] bg-slate-200">
+            <div className="flex flex-col items-center my-10">
                 <h1 className="mb-2 font-bold text-darkGray text-5xl">Testimonials</h1>
                 <p className="text-lightGray font-thin leading-5">what people think?</p>
             </div>
