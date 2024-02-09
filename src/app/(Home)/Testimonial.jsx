@@ -4,17 +4,17 @@ import Link from "next/link"
 
 export default function Testimonial() {
     return (
-        <section className="container py-5 flex flex-col justify-center min-h-[100vh]">
+        <section className="container py-5 flex flex-col justify-center min-h-[100vh] bg-slate-200">
             <div className="flex flex-col items-center mb-10">
                 <h1 className="mb-2 font-bold text-darkGray text-5xl">Testimonials</h1>
-                <p className="text-lightGray font-thin leading-5">What People think?</p>
+                <p className="text-lightGray font-thin leading-5">what people think?</p>
             </div>
             <div className="flex justify-between items-center flex-wrap h-[70%]">
                 {
                     testimonials.map((testimonial) => {
                         return (
                             <Link key={testimonial.id} className="w-[100%] md:w-[32%] mb-5" href={testimonial.link} target="_blank">
-                                <Card className="w-[100%] md:w-[100%] p-5">
+                                <Card className="w-[100%] md:w-[100%] p-5 bg-purple-50">
                                     <CardHeader className="mb-5">
                                         <h1 className="font-bold text-darkGray text-center">{testimonial.tag}</h1>
                                     </CardHeader>
