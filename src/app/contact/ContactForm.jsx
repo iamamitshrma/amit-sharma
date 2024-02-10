@@ -13,6 +13,7 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { HOSTNAME } from "@/constants/constants";
 
 export default function ContactForm() {
     const formSchema = z.object({
@@ -33,7 +34,7 @@ export default function ContactForm() {
     })
 
     async function onSubmit(values) {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/contact`, {method: "POST", body: JSON.stringify(values), cache: "no-store", headers: {'content-type': 'application/json'}});
+        const res = await fetch(`${HOSTNAME}/api/contact`, {method: "POST", body: JSON.stringify(values), cache: "no-store", headers: {'content-type': 'application/json'}});
         const data = await res.json();
         alert(data?.message);
     }

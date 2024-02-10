@@ -1,0 +1,1 @@
+export const HOSTNAME="https://amit-sharma-dev.vercel.app"
