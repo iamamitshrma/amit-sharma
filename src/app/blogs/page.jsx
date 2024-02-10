@@ -2,7 +2,7 @@ import Image from "next/image";
 import Blog from "./Blog";
 
 async function getData() {
-    const res = await fetch("http://localhost:3000/api/blogs", {cache: "no-store"});
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/blogs`, {cache: "no-store"});
     return res.json();
 }
 export default async function Blogs() {

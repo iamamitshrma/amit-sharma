@@ -33,7 +33,7 @@ export default function ContactForm() {
     })
 
     async function onSubmit(values) {
-        const res = await fetch("http://localhost:3000/api/contact", {method: "POST", body: JSON.stringify(values), cache: "no-store", headers: {'content-type': 'application/json'}});
+        const res = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/contact`, {method: "POST", body: JSON.stringify(values), cache: "no-store", headers: {'content-type': 'application/json'}});
         const data = await res.json();
         alert(data?.message);
     }
