@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Blog from "./Blog";
 
@@ -7,9 +8,6 @@ async function getData() {
 }
 export default async function Blogs() {
     const res = await getData();
-
-
-    console.log(res?.data[0]?.item)
 
     return (
         <main className="container py-5">
