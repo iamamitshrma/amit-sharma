@@ -32,9 +32,10 @@ export default function ContactForm() {
         },
     })
 
-    function onSubmit(values) {
-        console.log("hi")
-        console.log(values)
+    async function onSubmit(values) {
+        const res = await fetch("http://localhost:3000/api/contact", {method: "POST", body: JSON.stringify(values), cache: "no-store", headers: {'content-type': 'application/json'}});
+        const data = await res.json();
+        alert(data?.message);
     }
 
     return (

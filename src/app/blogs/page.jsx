@@ -1,7 +1,38 @@
-export default function Blogs() {
+import Image from "next/image";
+import Blog from "./Blog";
+
+async function getData() {
+    const res = await fetch("http://localhost:3000/api/blogs", {cache: "no-store"});
+    return res.json();
+}
+export default async function Blogs() {
+    const res = await getData();
+
+
+    console.log(res?.data[0]?.item)
+
     return (
-        <div className="container py-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, optio. Cupiditate magnam necessitatibus vel eius tempore molestiae iste quidem facilis ducimus quos odio dignissimos sed, fugit temporibus ipsam deleniti, ipsa aliquam eaque voluptatum possimus alias quas expedita corrupti ea? Voluptas ducimus aut beatae fuga perspiciatis iste, in rem enim nemo, quidem dolorem debitis assumenda non! Ipsa, vitae perferendis maxime ipsam, amet repellat alias voluptate quod at earum excepturi iusto officiis ratione magnam. Libero nostrum optio voluptas corrupti eveniet, reprehenderit ratione fugiat iusto quae voluptatibus? Repellendus quaerat natus vitae maxime nihil rem minus illo eligendi libero commodi autem, iste doloremque, ea officia cumque voluptates dolores numquam suscipit sit. Adipisci sint, dolor praesentium soluta dignissimos sed est vel. Cupiditate vel rerum nostrum quibusdam natus quas mollitia hic vero? Harum ad error repudiandae eveniet placeat tenetur molestiae veniam libero, tempore soluta et incidunt distinctio corrupti quas rerum quaerat aliquid modi vero, mollitia excepturi dolor temporibus dolore numquam reiciendis! Et non at nihil nam rem officia, eligendi provident! Vel accusantium, earum saepe error minima placeat, nemo nam, molestias harum asperiores nulla eligendi. Tempora perspiciatis eum, veritatis rerum, tempore sint ab minima mollitia officia deleniti iste rem saepe eaque itaque vel est aut vitae quasi harum suscipit nihil? Possimus perferendis nostrum rem ex dolore quos in odit rerum facilis molestias. Accusantium quod ad quibusdam tenetur vitae. Ab natus sequi quidem, odio voluptas fugiat distinctio, quod sapiente quam quibusdam optio tenetur? Consectetur sint eos natus fugit, officia ex unde! Sequi id, quidem ea neque ratione quisquam, ex voluptatum adipisci totam voluptates repellat eos quibusdam saepe necessitatibus, eaque cumque tempora. Architecto necessitatibus commodi qui, accusantium reprehenderit rerum nihil neque repudiandae optio magni numquam esse, ad delectus laborum in quia omnis ducimus aperiam vitae nam, molestias autem adipisci non. Alias nulla similique, cupiditate accusantium modi iste vitae exercitationem est molestiae incidunt optio numquam cumque a odio perspiciatis. Cumque eveniet velit ipsam iure eaque, consectetur cupiditate modi ratione non ducimus accusamus deserunt quia aspernatur culpa autem tempora? Nesciunt cum officiis nam dignissimos magni? Sunt quas cum sint ipsa, porro similique. Quibusdam ratione ullam ea asperiores labore, nesciunt ab quos eaque repellat minima reiciendis ex distinctio atque fuga fugiat iure quae, voluptatibus voluptas dignissimos. Optio repellendus provident ipsam sint voluptates et corporis sequi mollitia dignissimos commodi esse minus cumque accusantium quia beatae, voluptas saepe exercitationem doloribus, non reprehenderit, aut earum? Aliquid nulla labore saepe delectus, alias ipsam maxime quidem est. Quia explicabo facilis nostrum enim, quas est alias consequuntur sequi sint, doloribus esse repudiandae in animi nobis rerum perspiciatis, iste id? Eum facilis dolores cumque cupiditate architecto amet sunt earum beatae, omnis eaque consectetur distinctio officia obcaecati dicta recusandae doloribus eligendi maxime voluptatem debitis sed alias odit hic eos? Obcaecati aspernatur eligendi sunt voluptas quae commodi atque quas at, quibusdam necessitatibus tenetur quia excepturi incidunt dolore quod dolorem minima suscipit illo temporibus itaque? Aliquid labore temporibus totam illum alias, accusantium pariatur error iure veritatis, corrupti iusto in neque expedita quasi non commodi quos ipsum. Vel fugiat aliquid dicta corrupti harum.</p>
-        </div>
+        <main className="container py-5">
+            <section className="h-[83vh] bg-bg-blog bg-cover">
+                <h3 className="text-active font-bold mb-2">Blogs</h3>
+                <h3 className="text-darkGray font-extrabold text-4xl mb-5 md:w-1/2">Unlock the Code: Your Ultimate Resource Hub for Software Development and Programming Insights!</h3>
+                <p className="text-lightGray font-thin leading-5 mb-5">Explore a World of Insightful Perspectives: Dive Into Our Blog Archives!</p>
+                <Image src="/medium.png" alt="medium website" width={50} height={50} />
+            </section>
+
+            <section>
+                <div className="flex flex-col items-center my-10">
+                    <h1 className="mb-2 font-bold text-darkGray text-5xl">Blogs</h1>
+                    <p className="text-lightGray font-thin leading-5">what i write?</p>
+                </div>
+                <div className="flex md:gap-4 gap-0 flex-wrap items-center">
+                    {
+                        res?.data[0]?.item && res?.data[0]?.item?.length > 0 && res?.data[0]?.item?.map((blog) => {
+                            return <Blog key={blog?.pubDate[0]} blog={blog} />
+                        })
+                    }
+                </div>
+            </section>
+        </main>
     )
 }

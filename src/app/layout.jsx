@@ -2,7 +2,6 @@ import { Baloo_Paaji_2 } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import StateProvider from "./state-provider";
 
 const Baloo = Baloo_Paaji_2({ subsets: ["latin"], variable: "--font-baloo" });
 export const metadata = {
@@ -17,16 +16,14 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo.png" sizes="any" />
       </head>
       <body className={Baloo.className}>
-        <StateProvider>
-          <div className="main">
-            <div className="gradient"></div>
-          </div>
-          <main className="relative">
-            <Navbar />
-            {children}
-            <Footer />
-          </main>
-        </StateProvider>
+        <div className="main">
+          <div className="gradient"></div>
+        </div>
+        <main className="relative">
+          <Navbar />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

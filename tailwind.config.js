@@ -44,6 +44,9 @@ module.exports = {
       fontFamily: {
         baloo: ["var(--font-baloo)", ...fontFamily.sans],
       },
+      backgroundImage: {
+        'bg-blog': `url("/bg.svg")`
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

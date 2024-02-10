@@ -12,7 +12,7 @@ import Link from "next/link"
 
 export default function YTCard({ video, type }) {
     return (
-        <Card key={video.id.videoId} className="w-[100%] md:w-[32%] mb-5">
+        <Card key={video.id.videoId} className="w-[100%] md:w-[33%] mb-5">
             <CardHeader>
                 <CardTitle className="font-medium text-lg text-darkGray" title={video?.snippet?.title}>{video?.snippet?.title?.split("|")[0]}</CardTitle>
                 <CardDescription className="text-lightGray leading-4 font-thin" title={video?.snippet?.description}>{video?.snippet?.description.slice(0, 30) || "  "}...</CardDescription>
