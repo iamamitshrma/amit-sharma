@@ -1,7 +1,7 @@
 import React, {Suspense} from 'react'
 import YTCard from './YTCard'
 import { getChannelsPlaylist } from '@/services/api';
-import Loading from '../../components/Loading';
+import Loading from '../../components/LoadingComp';
 import { Button } from '@/components/ui/button';
 
 export default async function Playlist() {
@@ -12,7 +12,7 @@ export default async function Playlist() {
                 {
                     response?.items && response?.items.length > 0 &&
                     response?.items.map((video) => {
-                        return <YTCard key={video.id.videoId} video={video} type="playlist" />
+                        return <YTCard key={video.id} video={video} type="playlist" />
                     })
                 }
             </div>

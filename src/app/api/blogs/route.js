@@ -10,7 +10,7 @@ export async function GET(req) {
         parseString(xmlData, (err, res) => {
             if(err) {
                 return new Response(JSON.stringify({
-                    data: result || [],
+                    data: result,
                     success: false,
                     message: "Failed to parse the XML."
                 })).status(400);

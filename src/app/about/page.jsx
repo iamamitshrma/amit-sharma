@@ -6,7 +6,7 @@ export default function About() {
             <div className="mb-10 w-[100%] md:w-[70%] text-center">
                 <h3 className="text-active font-bold mb-2">👋 Hello</h3>
                 <h1 className="text-darkGray font-extrabold text-4xl mb-5">My name is &quot;Amit Sharma&quot;</h1>
-                <Image src="/profile.png" width={100} height={100} className="rounded-full mb-10 mx-auto shadow-xl" />
+                <Image src="/profile.png" width={100} height={100} className="rounded-full mb-10 mx-auto shadow-xl" alt="amit sharma profile" />
 
                 <p className="text-lightGray mb-5">I&apos;m a <span className="text-active">front-end and back-end</span> developer that learned everything on my own. I love making interesting <span className="text-active">mobile apps and websites.</span> My last employer is Kylo Apps in India and worked as a 🚀 SDE-1.  I&apos;ve been designing and developing websites for different tech and startup companies for the last five years. I also provide <span className="text-active">freelancing services</span> with an emphasis on creating aesthetically pleasing and intuitive digital experiences.</p>
 

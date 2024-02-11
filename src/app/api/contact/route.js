@@ -4,7 +4,6 @@ import { createNodeMailConnection, sendNodmailEmail } from "../utils/utils";
 export async function POST(req) {
     const data = await req.json();
     try {
-        console.log(data)
         createNodeMailConnection();
         const info = sendNodmailEmail(data);
         if(info) {

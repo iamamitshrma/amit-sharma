@@ -45,7 +45,7 @@ module.exports = {
         baloo: ["var(--font-baloo)", ...fontFamily.sans],
       },
       backgroundImage: {
-        'bg-blog': `url("/bg.svg")`
+        'blog': `url("/bg.svg")`
       }
     },
   },

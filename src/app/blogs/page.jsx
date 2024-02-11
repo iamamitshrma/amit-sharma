@@ -11,7 +11,7 @@ export default async function Blogs() {
 
     return (
         <main className="container py-5">
-            <section className="h-[83vh] bg-bg-blog bg-cover">
+            <section className="h-[83vh] bg-blog bg-cover">
                 <h3 className="text-active font-bold mb-2">Blogs</h3>
                 <h3 className="text-darkGray font-extrabold text-4xl mb-5 md:w-1/2">Unlock the Code: Your Ultimate Resource Hub for Software Development and Programming Insights!</h3>
                 <p className="text-lightGray font-thin leading-5 mb-5">Explore a World of Insightful Perspectives: Dive Into Our Blog Archives!</p>

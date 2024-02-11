@@ -20,7 +20,7 @@ export default function About() {
                     <p className="text-lightGray w-full md:w-1/2 mb-5">I&apos;m great at creating reliable server-side designs that provide smooth communication and data management.</p>
                     <h1 className="text-darkGray font-semibold text-2xl mb-1">&quot;Development for Mobile&quot;</h1>
                     <p className="text-lightGray w-full md:w-1/2 mb-10">I design user-friendly mobile experiences with an emphasis on functionality and user experience.</p>
-                    <p className="text-gray-500 w-full font-thin mb-5">Let&apos;s talk about how I can support you in completing your projects and get in touch!</p>
+                    <p className="text-darkGray w-full font-thin mb-5">Let&apos;s talk about how I can support you in completing your projects and get in touch!</p>
                     <div className="w-full md:w-[80%]">
                     </div>
                 </div>

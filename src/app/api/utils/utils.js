@@ -16,12 +16,11 @@ export function createNodeMailConnection() {
   }
   
   export async function sendNodmailEmail(user) {
-    console.log(user)
     const info = await transport.sendMail({
       from: user?.email,
       to: process.env.NEXT_PUBLIC_EMAIL,
       subject: `${String(user?.fullName).toUpperCase()} - ${user?.subject}`,
-      html: `<div><p>${user?.summary}</p><br /><b>Note: This email comes from amit sharma website</b></div>`,
+      html: `<div style="line-height: 1"><p>${user?.summary}</p><br/><p>${user?.fullName}</p><p>${user?.email}</p><br /><b>Note: This email comes from amit sharma website</b></div>`,
     });
     return info;
   }
