@@ -11,6 +11,7 @@ export default function Navbar() {
             <div className="container flex justify-center md:justify-between items-center">
                 <div>
                     <Image
+                        priority
                         src="/logo.png"
                         width={80}
                         height={80}

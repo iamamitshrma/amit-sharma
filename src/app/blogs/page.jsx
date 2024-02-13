@@ -3,7 +3,7 @@ import Blog from "./Blog";
 import { HOSTNAME } from "@/constants/constants";
 
 async function getData() {
-    const res = await fetch(`${HOSTNAME}/api/blogs`, {cache: "no-store"});
+    const res = await fetch(`${HOSTNAME}/api/blogs`, {next: {revalidate: 60}});
     return res.json();
 }
 export default async function Blogs() {

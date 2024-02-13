@@ -5,9 +5,9 @@ export default function HeroSection() {
   return (
     <section className="py-5 flex items-center justify-center h-[87vh]">
       <div className="">
-        <h1 className="font-bold text-5xl">
-          <span className="block text-lightGray">HI!</span>
-          <span className="text-darkGray">I am Amit Sharma</span>
+        <h1>
+          <b className="block text-lightGray">HI!</b>
+          <b className="text-darkGray">I am Amit Sharma</b>
         </h1>
         <p className="text-black font-thin leading-5 mb-5">A Coder and Youtuber</p>
         <div className="flex">
