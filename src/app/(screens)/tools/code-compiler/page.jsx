@@ -1,6 +1,7 @@
 'use client'
 import JSEditor from "@/app/(components)/(code-editors)/JSEditor"
 import { Button } from "@/components/ui/button";
+import { HOSTNAME } from "@/constants/constants";
 import { supportedLanguages } from "@/data/supportedLanguage"
 import { useEffect, useState } from "react"
 
@@ -10,7 +11,7 @@ export default function CodeCompiler() {
     const [output, setOutput] = useState("");
 
     const runCode = async() => {
-        const res = await fetch("http://localhost:3000/api/compiler", {method: "POST", body: JSON.stringify({code: code.replace(/\n/g, ' ')}), cache: "no-store"})
+        const res = await fetch(`${HOSTNAME}/api/compiler`, {method: "POST", body: JSON.stringify({code: code.replace(/\n/g, ' ')}), cache: "no-store"})
         const data = await res.json()
         setOutput(data?.output || "")
       };
