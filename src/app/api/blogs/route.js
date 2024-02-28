@@ -3,7 +3,7 @@ import { parseString } from "xml2js";
 
 export async function GET(req) {
     try {
-        const mediumURL = "https://medium.com/feed/@amitsharma_42743";
+        const mediumURL = "https://medium.com/feed/@iamamitshrma";
         const response  = await fetch(mediumURL);
         const xmlData = await response.text();
         let result = [];
