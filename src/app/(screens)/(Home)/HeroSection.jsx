@@ -18,7 +18,7 @@ export default function HeroSection() {
             <Image src="/linkedin.png" width={30} height={30} alt="amit sharma linkedin" />
           </Link>
           <Link href="https://www.youtube.com/channel/UC-DqwAwCxiOGIkHzOUTwUKw" target="_blank">
-            <Image src="/youtube.png" width={30} height={30} alt="thecodemm youtube channel" />
+            <Image src="/youtube.png" width={30} height={30} alt="thecodemen youtube channel" />
           </Link>
         </div>
       </div>

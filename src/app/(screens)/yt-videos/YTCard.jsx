@@ -21,7 +21,7 @@ export default function YTCard({ video, type }) {
                 <Image className="w-full h-full bg-contain" src={video?.snippet?.thumbnails?.high?.url} width={video?.snippet?.thumbnails?.high?.width} height={video?.snippet?.thumbnails?.high?.height} alt={`Image`} />
             </CardContent>
             <CardFooter>
-                <Link href={type === "playlist" ? `https://www.youtube.com/watch?v=&list=${video?.id}` : video?.id?.videoId ? `https://www.youtube.com/watch?v=${video?.id?.videoId}` : `https://www.youtube.com/@thecodemm`} target="_blank"><Button className="text-active border-active" variant="outline">Open On Youtube</Button></Link>
+                <Link href={type === "playlist" ? `https://www.youtube.com/watch?v=&list=${video?.id}` : video?.id?.videoId ? `https://www.youtube.com/watch?v=${video?.id?.videoId}` : `https://www.youtube.com/@thecodemen`} target="_blank"><Button className="text-active border-active" variant="outline">Open On Youtube</Button></Link>
             </CardFooter>
         </Card>
     )
