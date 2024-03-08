@@ -44,6 +44,16 @@ export default function Navbar() {
                     <li><Link className={`text-lg ${pathName === "/blogs" && "text-active"}`} href="/blogs">Blogs</Link></li>
                     <li><Link className={`text-lg ${pathName === "/contact" && "text-active"}`} href="/contact">Contact</Link></li>
                     <li><Link className={`text-lg ${pathName === "/about" && "text-active"}`} href="/about">About</Link></li>
+                    <li>
+                        <DropdownMenu>
+                            <DropdownMenuTrigger className="text-lg flex items-center">Packages <IoMdArrowDropdown /></DropdownMenuTrigger>
+                            <DropdownMenuContent>
+                            <Link href="https://www.npmjs.com/package/codemen-clipboard" target="_blank" className={`text-lg ${pathName === "/tools/code-formatter" && "text-active"}`}>
+                                <DropdownMenuItem className="cursor-pointer">Clipboard</DropdownMenuItem>
+                            </Link>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </li>
                     {/* <li>
                         <DropdownMenu>
                             <DropdownMenuTrigger className="text-lg flex items-center">Tools <IoMdArrowDropdown /></DropdownMenuTrigger>
