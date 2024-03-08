@@ -38,7 +38,7 @@ export default function Contact() {
                                 <Link className="me-2" href="https://www.youtube.com/channel/UC-DqwAwCxiOGIkHzOUTwUKw" target="_blank">
                                     <Image src="/youtube.png" width={30} height={30} alt="thecodemen youtube channel" />
                                 </Link>
-                                <Link className="me-2" href="https://www.instagram.com/iamamitshaarma/" target="_blank">
+                                <Link className="me-2" href="https://www.instagram.com/thecodemen/" target="_blank">
                                     <Image src="/instagram.png" width={30} height={30} alt="amit sharma instagram page" />
                                 </Link>
                                 <Link className="me-2" href="https://twitter.com/amit__shaarma" target="_blank">
